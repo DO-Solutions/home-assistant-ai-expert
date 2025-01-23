@@ -108,7 +108,10 @@
     <!-- Chatbot Script -->
     <script>
         window.openChatbot = function() {
-            document.querySelector('#do-genai-embed button').click();
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.contentWindow.postMessage({ type: "expand" }, "*");
+            }
         }
     </script>
     <script async
