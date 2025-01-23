@@ -50,9 +50,9 @@ Include common variables and filters
 Note template testing tools when relevant
 
 Example response style:
-```yaml
+
 {{ states('sensor.temperature') | float > 25 }}
-```
+
 Need more context?"
 
 Constraints:
