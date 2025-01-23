@@ -35,7 +35,7 @@
                         <p class="text-blue-600">Assistant: I'll help you create a basic automation. Here's a YAML example...</p>
                     </div>
                 </div>
-                <button onclick="window.openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
+                <button onclick="openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
             </div>
         </div>
     </section>
@@ -105,13 +105,26 @@
         </div>
     </footer>
 
-    <!-- Chatbot Script -->
+    <!-- Chat Container -->
+    <div id="chat-container" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg w-full max-w-4xl h-3/4 m-4 relative">
+            <button onclick="closeChatbot()" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div id="chatbot-mount" class="w-full h-full p-4"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script>
         window.openChatbot = function() {
-            const iframe = document.querySelector('iframe');
-            if (iframe) {
-                iframe.contentWindow.postMessage({ type: "expand" }, "*");
-            }
+            document.getElementById('chat-container').style.display = 'flex';
+        }
+        
+        window.closeChatbot = function() {
+            document.getElementById('chat-container').style.display = 'none';
         }
     </script>
     <script async
@@ -123,7 +136,8 @@
         data-secondary-color="#E5E8ED"
         data-button-background-color="#2563EB"
         data-starting-message="👋 Welcome! I'm your Home Assistant AI expert. Whether you need help with installation, automations, integrations, or troubleshooting, I'm here to assist. What can I help you with today?"
-        data-logo="/static/chatbot/icons/default-agent.svg">
+        data-logo="/static/chatbot/icons/default-agent.svg"
+        data-render-target-id="chatbot-mount">
     </script>
 </body>
 </html>
