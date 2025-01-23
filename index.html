@@ -8,11 +8,8 @@
 </head>
 <body class="bg-gray-50 dark:bg-gray-900">
     <!-- Navigation -->
-    <nav class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto">
-            <h1 class="text-xl font-bold text-center">Home Assistant AI Expert</h1>
-        </div>
-    </nav>
+    <nav class="border-b border-blue-500"></nav>
+
 
     <!-- Hero Section -->
     <div class="relative isolate">
@@ -35,9 +32,12 @@
                 <div class="max-w-2xl mx-auto bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow">
                     <div class="bg-white dark:bg-gray-800 p-4 rounded mb-4">
                         <p class="text-gray-700 dark:text-gray-300">Sample conversation:</p>
-                        <div class="mt-2 space-y-2">
+                        <div class="mt-2 space-y-4">
                             <p class="font-medium text-gray-900 dark:text-gray-100">User: How do I set up a motion-triggered light automation?</p>
                             <p class="text-blue-600 dark:text-blue-400"><strong>Assistant:</strong> I'll help you create a basic automation. Here's a YAML example...</p>
+                            
+                            <p class="font-medium text-gray-900 dark:text-gray-100">User: Create a template Template if person.jack home and sensor.which_room_is_jack_in is Bedroom then return true, else false</p>
+                            <p class="text-blue-600 dark:text-blue-400"><strong>Assistant:</strong> {{ is_state('person.jack', 'home') and states('sensor.which_room_is_jack_in') == 'Bedroom' }}</p>
                         </div>
                     </div>
                     <button onclick="openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
