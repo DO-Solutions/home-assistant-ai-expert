@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Assistant AI Expert - Built with DigitalOcean GenAI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Home Assistant AI Expert</h1>
+            <div class="flex space-x-4">
+                <a href="#features" class="hover:text-gray-200">Features</a>
+                <a href="#demo" class="hover:text-gray-200">Demo</a>
+                <a href="#about" class="hover:text-gray-200">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl font-bold mb-4">Your AI Expert for Home Assistant</h1>
+        <p class="text-xl text-gray-600 mb-8">Powered by DigitalOcean GenAI Platform</p>
+        <div class="bg-blue-100 p-4 rounded-lg inline-block">
+            <p class="text-sm text-blue-800">This is a demonstration project showcasing the capabilities of DigitalOcean GenAI Platform. Not affiliated with the Open Home Foundation.</p>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Expert Guidance</h3>
+                    <p>Step-by-step setup assistance and troubleshooting for Home Assistant</p>
+                </div>
+                <div class="p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Smart Recommendations</h3>
+                    <p>Personalized hardware and integration suggestions based on your needs</p>
+                </div>
+                <div class="p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Code Examples</h3>
+                    <p>Ready-to-use YAML configurations and automation templates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Built with DigitalOcean GenAI</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>GPU-powered AI processing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>RAG pipeline with Home Assistant knowledge base</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Function calling for real-time data processing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Try It Out</h2>
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
+                <div class="bg-gray-100 p-4 rounded mb-4">
+                    <p class="text-gray-700">Sample conversation:</p>
+                    <div class="mt-2 space-y-2">
+                        <p class="font-medium">User: How do I set up a motion-triggered light automation?</p>
+                        <p class="text-blue-600">Assistant: I'll help you create a basic automation. Here's a YAML example...</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>Built with DigitalOcean GenAI Platform</p>
+            <p class="mt-2 text-sm text-gray-400">Demonstration project - Not affiliated with Open Home Foundation</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Script -->
+    <script async
+        src="https://agent-a8914ee0b5931a379518-5j6l5.ondigitalocean.app/static/chatbot/widget.js"
+        data-agent-id="55c555ae-d9a1-11ef-bf8f-4e013e2ddde4"
+        data-chatbot-id="WVyqAtidQkRVzeC5IqDf2uLIaamjLKKG"
+        data-name="Home Assistant Expert Chatbot"
+        data-primary-color="#031B4E"
+        data-secondary-color="#E5E8ED"
+        data-button-background-color="#0061EB"
+        data-starting-message="👋 Welcome! I'm your Home Assistant AI expert. Whether you need help with installation, automations, integrations, or troubleshooting, I'm here to assist. What can I help you with today?"
+        data-logo="/static/chatbot/icons/default-agent.svg">
+    </script>
+</body>
+</html>
