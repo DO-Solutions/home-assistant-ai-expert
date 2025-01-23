@@ -23,20 +23,37 @@
         </div>
     </header>
 
+    <!-- Try It Out Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Try It Out</h2>
+            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
+                <div class="bg-gray-100 p-4 rounded mb-4">
+                    <p class="text-gray-700">Sample conversation:</p>
+                    <div class="mt-2 space-y-2">
+                        <p class="font-medium">User: How do I set up a motion-triggered light automation?</p>
+                        <p class="text-blue-600">Assistant: I'll help you create a basic automation. Here's a YAML example...</p>
+                    </div>
+                </div>
+                <button onclick="window.openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Features -->
-    <section class="bg-white py-16">
+    <section class="bg-gray-50 py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">Features</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 border rounded-lg">
+                <div class="p-6 border rounded-lg bg-white">
                     <h3 class="text-xl font-semibold mb-4">Expert Guidance</h3>
                     <p>Step-by-step setup assistance and troubleshooting for Home Assistant</p>
                 </div>
-                <div class="p-6 border rounded-lg">
+                <div class="p-6 border rounded-lg bg-white">
                     <h3 class="text-xl font-semibold mb-4">Smart Recommendations</h3>
                     <p>Personalized hardware and integration suggestions based on your needs</p>
                 </div>
-                <div class="p-6 border rounded-lg">
+                <div class="p-6 border rounded-lg bg-white">
                     <h3 class="text-xl font-semibold mb-4">Code Examples</h3>
                     <p>Ready-to-use YAML configurations and automation templates</p>
                 </div>
@@ -45,12 +62,12 @@
     </section>
 
     <!-- GenAI Platform Details -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4 text-center">Powered by DigitalOcean GenAI Platform</h2>
             <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This agent's knowledge base was built by indexing all of Home Assistant's public documentation using the GTE Large EN v1.5 model, costing just $0.48631 (5,403,476 tokens @ $0.09/1M tokens)</p>
             <div class="max-w-3xl mx-auto">
-                <div class="bg-white p-8 rounded-lg shadow mb-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow mb-8">
                     <div class="grid gap-6">
                         <div>
                             <h3 class="text-xl font-semibold mb-2">GenAI Agents</h3>
@@ -79,23 +96,6 @@
         </div>
     </section>
 
-    <!-- Try It Out Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Try It Out</h2>
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
-                <div class="bg-gray-100 p-4 rounded mb-4">
-                    <p class="text-gray-700">Sample conversation:</p>
-                    <div class="mt-2 space-y-2">
-                        <p class="font-medium">User: How do I set up a motion-triggered light automation?</p>
-                        <p class="text-blue-600">Assistant: I'll help you create a basic automation. Here's a YAML example...</p>
-                    </div>
-                </div>
-                <button onclick="window.openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
@@ -108,7 +108,6 @@
     <!-- Chatbot Script -->
     <script>
         window.openChatbot = function() {
-            // Trigger click on the chatbot widget button
             document.querySelector('.do-chatbot-launcher').click();
         }
     </script>
