@@ -6,7 +6,7 @@
     <title>Home Assistant AI Expert - Built with DigitalOcean GenAI</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 dark:bg-gray-900">
     <!-- Navigation -->
     <nav class="bg-blue-600 text-white p-4">
         <div class="container mx-auto">
@@ -15,106 +15,112 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="container mx-auto px-4 py-16 text-center">
-        <h1 class="text-4xl font-bold mb-4">Your AI Expert for Home Assistant</h1>
-        <p class="text-xl text-gray-600 mb-8">Powered by DigitalOcean GenAI Platform</p>
-        <div class="bg-blue-100 p-4 rounded-lg inline-block">
-            <p class="text-sm text-blue-800">This is a demonstration project showcasing the capabilities of DigitalOcean GenAI Platform. Not affiliated with the Open Home Foundation.</p>
+    <div class="relative isolate">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-100 to-blue-400 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
         </div>
-    </header>
 
-    <!-- Try It Out Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Try It Out</h2>
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow">
-                <div class="bg-gray-100 p-4 rounded mb-4">
-                    <p class="text-gray-700">Sample conversation:</p>
-                    <div class="mt-2 space-y-2">
-                        <p class="font-medium">User: How do I set up a motion-triggered light automation?</p>
-                        <p class="text-blue-600">Assistant: I'll help you create a basic automation. Here's a YAML example...</p>
-                    </div>
-                </div>
-                <button onclick="openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
+        <header class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100 sm:text-6xl">AI Expert for Home Assistant</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">Powered by DigitalOcean GenAI Platform</p>
+            <div class="bg-blue-100 dark:bg-blue-900/50 p-4 rounded-lg inline-block">
+                <p class="text-sm text-blue-800 dark:text-blue-200">This is a demonstration project showcasing the capabilities of DigitalOcean GenAI Platform. Not affiliated with the Open Home Foundation.</p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Features -->
-    <section class="bg-gray-50 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Features</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 border rounded-lg bg-white">
-                    <h3 class="text-xl font-semibold mb-4">Expert Guidance</h3>
-                    <p>Step-by-step setup assistance and troubleshooting for Home Assistant</p>
-                </div>
-                <div class="p-6 border rounded-lg bg-white">
-                    <h3 class="text-xl font-semibold mb-4">Smart Recommendations</h3>
-                    <p>Personalized hardware and integration suggestions based on your needs</p>
-                </div>
-                <div class="p-6 border rounded-lg bg-white">
-                    <h3 class="text-xl font-semibold mb-4">Code Examples</h3>
-                    <p>Ready-to-use YAML configurations and automation templates</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GenAI Platform Details -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-center">Powered by DigitalOcean GenAI Platform</h2>
-            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">This agent's knowledge base was built by indexing all of Home Assistant's public documentation using the GTE Large EN v1.5 model, costing just $0.48631 (5,403,476 tokens @ $0.09/1M tokens)</p>
-            <div class="max-w-3xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-lg shadow mb-8">
-                    <div class="grid gap-6">
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">GenAI Agents</h3>
-                            <p>Built using foundation models with advanced testing capabilities in the Model Playground</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">RAG Pipelines</h3>
-                            <p>Enhanced responses using Retrieval-Augmented Generation with custom knowledge bases</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Agent Routing</h3>
-                            <p>Intelligent task distribution ensuring optimal handling of user requests</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
-                            <p>Simple deployment with ready-to-use chatbot code snippets</p>
+        <!-- Try It Out Section -->
+        <section class="py-8 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">Try It Out</h2>
+                <div class="max-w-2xl mx-auto bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow">
+                    <div class="bg-white dark:bg-gray-800 p-4 rounded mb-4">
+                        <p class="text-gray-700 dark:text-gray-300">Sample conversation:</p>
+                        <div class="mt-2 space-y-2">
+                            <p class="font-medium text-gray-900 dark:text-gray-100">User: How do I set up a motion-triggered light automation?</p>
+                            <p class="text-blue-600 dark:text-blue-400"><strong>Assistant:</strong> I'll help you create a basic automation. Here's a YAML example...</p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center">
-                    <a href="https://www.digitalocean.com/products/gen-ai" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Try DigitalOcean GenAI Platform
-                    </a>
+                    <button onclick="openChatbot()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Start Conversation</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>Built with DigitalOcean GenAI Platform</p>
-            <p class="mt-2">Built and hosted on <a href="https://www.digitalocean.com/products/app-platform" class="underline hover:text-blue-300">DigitalOcean App Platform</a></p>
-            <p class="mt-2 text-sm text-gray-400">Demonstration project - Not affiliated with Open Home Foundation</p>
-        </div>
-    </footer>
+        <!-- Features Section -->
+        <section class="bg-gray-50 dark:bg-gray-900 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">Features</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-6 border rounded-lg bg-white dark:bg-gray-800">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Expert Guidance</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Step-by-step setup assistance and troubleshooting for Home Assistant</p>
+                    </div>
+                    <div class="p-6 border rounded-lg bg-white dark:bg-gray-800">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Smart Recommendations</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Personalized hardware and integration suggestions based on your needs</p>
+                    </div>
+                    <div class="p-6 border rounded-lg bg-white dark:bg-gray-800">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Code Examples</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Ready-to-use YAML configurations and automation templates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Chat Container -->
-    <div id="chat-container" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
-        <div class="bg-white rounded-lg w-full max-w-4xl h-3/4 m-4 relative">
-            <button onclick="closeChatbot()" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            <div id="chatbot-mount" class="w-full h-full p-4"></div>
+        <!-- GenAI Platform Section -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4 text-center text-gray-900 dark:text-gray-100">Powered by DigitalOcean GenAI Platform</h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">This agent's knowledge base was built by indexing all of Home Assistant's public documentation using the GTE Large EN v1.5 model, <strong>costing just $0.48631 (5,403,476 tokens @ $0.09/1M tokens)</strong></p>
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow mb-8">
+                        <div class="grid gap-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">GenAI Agents</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Built using foundation models with advanced testing capabilities in the Model Playground</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">RAG Pipelines</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Enhanced responses using Retrieval-Augmented Generation with custom knowledge bases</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Agent Routing</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Intelligent task distribution ensuring optimal handling of user requests</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">Code Snippets</h3>
+                                <p class="text-gray-600 dark:text-gray-400">Integrate your agents into chatbots with ready-to-use code snippets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.digitalocean.com/products/gen-ai" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                            Try DigitalOcean GenAI Platform
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Container -->
+        <div id="chat-container" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+            <div class="bg-white dark:bg-gray-800 rounded-lg w-full max-w-4xl h-3/4 m-4 relative">
+                <button onclick="closeChatbot()" class="absolute right-4 top-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div id="chatbot-mount" class="w-full h-full p-4"></div>
+            </div>
         </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>Built with DigitalOcean GenAI Platform</p>
+                <p class="mt-2">Built and hosted on <a href="https://www.digitalocean.com/products/app-platform" class="underline hover:text-blue-300">DigitalOcean App Platform</a></p>
+                <p class="mt-2 text-sm text-gray-400">Demonstration project - Not affiliated with Open Home Foundation</p>
+            </div>
+        </footer>
     </div>
 
     <!-- Scripts -->
