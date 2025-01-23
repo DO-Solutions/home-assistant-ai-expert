@@ -75,8 +75,6 @@ Acknowledge when issues require advanced troubleshooting
 - AI-powered chat interface
 - Step-by-step automation guidance
 - Configuration assistance
-- Mobile-friendly design with dark mode
-- Integration with existing Home Assistant setups
 
 ## Tech Stack
 
