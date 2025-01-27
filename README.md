@@ -28,9 +28,16 @@ This project showcases an AI agent that helps users with Home Assistant setup, c
 
 ### Agent Configuration
 
-The system uses agent routing to direct queries to specialized agents based on the content:
+The system uses agent routing to direct queries to specialized agents based on specific routing rules:
 
-1. **Main Agent (Home Assistant Expert)**: Handles queries about Home Assistant setup, installation, integrations, and general functionality not related to automations.
+### Routing Rules
+1. **Main Agent (Home Assistant Expert)**
+   `if the query is about Home Assistant setup, installation, integrations, or general functionality not related to automations.`
+
+2. **Automation Specialist Agent**
+   `input mentions automations, triggers, conditions, actions, blueprints, templates, scenes, scripts or contains YAML code.`
+
+3. **Main Agent (Home Assistant Expert)**: Handles queries about Home Assistant setup, installation, integrations, and general functionality not related to automations.
 
 Instructions:
 ```
