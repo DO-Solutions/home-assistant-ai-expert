@@ -32,11 +32,11 @@ The system uses agent routing to direct queries to specialized agents based on s
 
 #### Main Agent (Home Assistant Expert)
 
-Handles queries about Home Assistant setup, installation, integrations, or general functionality not related to automations
+- Handles queries about Home Assistant setup, installation, integrations, or general functionality not related to automations
 
 ##### Routing Rules
 
-`if the query is about Home Assistant setup, installation, integrations, or general functionality not related to automations.`
+- `if the query is about Home Assistant setup, installation, integrations, or general functionality not related to automations.`
 
 #####  Instructions:
 
