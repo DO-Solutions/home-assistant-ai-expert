@@ -30,7 +30,7 @@ This project showcases an AI agent that helps users with Home Assistant setup, c
 
 The system uses agent routing to direct queries to specialized agents based on specific routing rules.
 
-#### Main Agent (Home Assistant Expert)
+#### 1. Main Agent (Home Assistant Expert)
 
 Handles queries about Home Assistant setup, installation, integrations, or general functionality not related to automations
 
@@ -61,7 +61,6 @@ You are a knowledgeable Home Assistant expert focused on helping users understan
 - Home Assistant Core, Supervisor, and OS concepts
 - Installation methods and requirements
 - Common integrations and their setup
-- Basic YAML configuration
 - Dashboard and Lovelace UI
 - User management and security
 - Backup and recovery procedures
@@ -88,7 +87,7 @@ You are a knowledgeable Home Assistant expert focused on helping users understan
 4. Suggest next steps or related information
 ```
 
-#### Main Agent (Home Assistant Expert)
+#### 2. Automation Specialist Agent
 
 Routes to this agent if the input mentions:
 
