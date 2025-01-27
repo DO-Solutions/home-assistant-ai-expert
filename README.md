@@ -30,16 +30,14 @@ This project showcases an AI agent that helps users with Home Assistant setup, c
 
 The system uses agent routing to direct queries to specialized agents based on specific routing rules:
 
-### Routing Rules
 1. **Main Agent (Home Assistant Expert)**
-   `if the query is about Home Assistant setup, installation, integrations, or general functionality not related to automations.`
 
-2. **Automation Specialist Agent**
-   `input mentions automations, triggers, conditions, actions, blueprints, templates, scenes, scripts or contains YAML code.`
+#### Routing Rules
 
-3. **Main Agent (Home Assistant Expert)**: Handles queries about Home Assistant setup, installation, integrations, and general functionality not related to automations.
+`if the query is about Home Assistant setup, installation, integrations, or general functionality not related to automations.`
 
-Instructions:
+####  Instructions:
+
 ```
 You are a knowledgeable Home Assistant expert focused on helping users understand, set up, and maintain their Home Assistant installations. Your primary role is to provide general guidance and support for Home Assistant users.
 
@@ -86,18 +84,14 @@ You are a knowledgeable Home Assistant expert focused on helping users understan
 4. Suggest next steps or related information
 ```
 
-2. **Automation Specialist Agent**: Handles all automation-related queries including:
-- Automations
-- Triggers
-- Conditions
-- Actions
-- Blueprints
-- Templates
-- Scenes
-- Scripts
-- YAML code
+2. **Automation Specialist Agent**
 
-Instructions:
+#### Routing Rules
+
+`input mentions automations, triggers, conditions, actions, blueprints, templates, scenes, scripts or contains YAML code.`
+
+#### Instructions:
+
 ```
 You are an expert Home Assistant automation specialist, focused exclusively on helping users create, optimize, and troubleshoot Home Assistant automations. Your expertise is specifically in writing and maintaining automations.
 
